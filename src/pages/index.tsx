@@ -1,3 +1,4 @@
+import { ArticleCard } from '@components/BlogCard'
 import Layout from '@components/Layout'
 import MasonCard from '@components/MasonCard'
 import TestimonialCard from '@components/TestimonialCard'
@@ -31,17 +32,18 @@ const Home = () => {
   return (
     <Layout>
       <section className='text-white bg-black bg-no-repeat bg-cover'>
-        <div className='container md:px-16 pt-[96px] py-8 md:py-48  flex flex-col items-center md:max-w-[800px]'>
+        <div className='container md:px-16 pt-[96px] py-8 md:py-48  flex flex-col items-center md:max-w-[960px]'>
           <div className='flex my-6 items-center font-bold border-white justify-between px-4 border-2 rounded-full pill h-[36px] '>
             New year, new site! <RightArrow stroke={'white'} />
           </div>
           <div className='flex flex-col items-center gap-4 text-center row'>
             <h1 className='font-bold text-[48px] tracking-tight leading-[48px] md:text-[72px] md:leading-[72px] my-2 md:my-4'>
-              The fullstack web agency for brands that get it.
+              The fullstack web agency powering brands that get it.
             </h1>
             <span className='text-[16px] md:text-[20px] leading-[32px]  font-medium text-[#ffffff90] '>
-              In-house entrepreneurs and digital natives building brands and
-              products that matter.
+              Your own in-house entrepreneur army, building modern digital
+              businesses ready for the future, scaled using growth engineering
+              and product-led growth.
             </span>
             {/* Buttons */}
             <div className='flex flex-col w-full gap-4 my-4 md:w-auto md:flex-row'>
@@ -220,6 +222,25 @@ const Home = () => {
                 <RightArrow stroke={'white'} />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blogposts */}
+      <section>
+        <div className='container my-32'>
+          <div className='mx-auto my-16 space-y-4 row md:max-w-4xl'>
+            <h2 className='text-5xl font-bold leading-tight tracking-tight text-left'>
+              We build brands and products that matter.
+            </h2>
+            <button className='text-white bg-black btn btn-opacity'>
+              View all articles
+            </button>
+          </div>
+          <div className='grid gap-8 article-items md:grid-cols-3'>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
           </div>
         </div>
       </section>
