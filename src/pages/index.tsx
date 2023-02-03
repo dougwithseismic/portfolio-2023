@@ -1,4 +1,5 @@
 import Layout from '@components/Layout'
+import MasonCard from '@components/MasonCard'
 import TestimonialCard from '@components/TestimonialCard'
 import Image from 'next/image'
 
@@ -13,15 +14,15 @@ const RightArrow = ({ ...props }) => (
   >
     <path
       d='M3.77051 8H13.1038'
-      stroke-width='1.33333'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='1.33333'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
     <path
       d='M8.4375 3.33325L13.1042 7.99992L8.4375 12.6666'
-      stroke-width='1.33333'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='1.33333'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
   </svg>
 )
@@ -95,7 +96,8 @@ const Home = () => {
                     needed and brought in the best modern developers to help us
                     take off.{' '}
                     <span className='text-black'>
-                      Thanks to them, our product-led growth has been exponential.
+                      Thanks to them, our product-led growth has been
+                      exponential.
                     </span>
                     "
                   </>
@@ -124,6 +126,99 @@ const Home = () => {
                 }
                 name='Jane Smith, CMO'
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Statement */}
+      <section>
+        <div className='container my-32'>
+          <div className='mx-auto md:max-w-3xl'>
+            <span className='text-[#002FFF] font-bold tracking-tight'>
+              Intuitive Routing
+            </span>
+            <h2 className='mx-auto my-4 text-[48px] font-bold leading-tight tracking-tight text-left'>
+              Double down on quick access to any documents with no buffering or
+              impact on wait times.
+            </h2>
+            <p className='leading-[35px] font-medium text-[] text-[22px] tracking-tight'>
+              Deploy's Super Sonic Security engine combines every
+              state-of-the-art security software into one elegant package.
+              Everything you need, nothing you don't.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Black */}
+      <section className='bg-black'>
+        <div className='container py-32 my-16'>
+          {/* Intro */}
+          <div className='mx-auto text-white md:max-w-5xl'>
+            <span className='font-bold tracking-tight'>So many features</span>
+            <h2 className='mx-auto my-4 text-[48px] font-bold leading-tight tracking-tight text-left'>
+              Get setup in minutes with immediate access to every feature.
+            </h2>
+          </div>
+          {/* Cards Mason */}
+          <div className='grid w-full grid-cols-1 my-32 gap-y-4 md:gap-8 md:grid-cols-12 '>
+            {/* Card One */}
+            <div className='card w-full flex flex-col justify-between md:h-[500px] col-span-full md:col-span-4 text-white rounded-3xl bg-[#1E2020] p-8 md:p-10'>
+              <div className='row'>
+                <h5 className='mb-4 text-[22px] font-semibold'>Shortcuts</h5>
+                <p className='text-white'>
+                  Copy, paste, create a new item. Access your command line any
+                  time.
+                </p>
+              </div>
+              <div className='flex items-center justify-between gap-2 py-4 border-b row'>
+                <div className='text'>Read about shortcuts</div>
+                <RightArrow stroke={'white'} />
+              </div>
+            </div>
+            {/* Card Two */}
+            <div className='card flex flex-col justify-between  md:h-[500px] col-span-8 text-white rounded-3xl bg-[#171717] p-10'>
+              <div className='row'>
+                <h5 className='mb-4 text-[22px] font-semibold'>Shortcuts</h5>
+                <p className='text-white'>
+                  Copy, paste, create a new item. Access your command line any
+                  time.
+                </p>
+              </div>
+              <div className='flex items-center justify-between gap-2 py-4 border-b row'>
+                <div className='text'>Read about shortcuts</div>
+                <RightArrow stroke={'white'} />
+              </div>
+            </div>
+            {/* Card Three */}
+            <div className='card flex flex-col justify-between  md:h-[500px] col-span-8 text-white rounded-3xl bg-[transparent] p-10'>
+              <div className='row'>
+                <h5 className='mb-4 text-[22px] font-semibold'>Shortcuts</h5>
+                <p className='text-white'>
+                  Copy, paste, create a new item. Access your command line any
+                  time.
+                </p>
+              </div>
+              <div className='flex items-center justify-between gap-2 py-4 border-b row'>
+                <div className='text'>Read about shortcuts</div>
+                <RightArrow stroke={'white'} />
+              </div>
+            </div>{' '}
+            {/* Card Four */}
+            <div className='card flex flex-col justify-between  md:h-[500px] col-span-4 text-white rounded-3xl bg-[#1E2020] p-10'>
+              {' '}
+              <div className='row'>
+                <h5 className='mb-4 text-[22px] font-semibold'>Shortcuts</h5>
+                <p className='text-white'>
+                  Copy, paste, create a new item. Access your command line any
+                  time.
+                </p>
+              </div>
+              <div className='flex items-center justify-between gap-2 py-4 border-b row'>
+                <div className='text'>Read about shortcuts</div>
+                <RightArrow stroke={'white'} />
+              </div>
             </div>
           </div>
         </div>

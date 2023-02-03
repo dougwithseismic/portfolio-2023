@@ -46,7 +46,7 @@ export const Navigation = () => {
         </div>
       </div>
 
-      <div className='container flex items-center justify-between flex-1 mobile md:flex'>
+      <div className='container items-center justify-between flex-1 hidden mobile md:flex'>
         <div className='col'>
           <LogoIcon />
         </div>
