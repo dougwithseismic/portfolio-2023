@@ -13,6 +13,7 @@
     "dependencies": {
         "@radix-ui/react-hover-card": "^1.0.3",
         "framer-motion": "^8.5.0",
+        "lucide-react": "^0.109.0",
         "next": "latest",
         "react": "18.2.0",
         "react-dom": "18.2.0"

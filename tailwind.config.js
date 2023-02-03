@@ -17,9 +17,7 @@ module.exports = {
       xl: '1440px'
     },
     fontFamily: {
-      nunito: ['Nunito', 'sans-serif'],
-      bebas: ['Bebas Neue', 'sans-serif'],
-      satoshi: ['Satoshi', 'sans-serif']
+      manrope: ['Manrope', 'sans-serif'],
     },
     extend: {
       colors: {
