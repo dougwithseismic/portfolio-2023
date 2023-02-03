@@ -1,0 +1,62 @@
+@tailwind components;
+
+// Here's an example of how to mix and match native scss and tailwind classes to create a reusable component library.
+@layer components {
+    code {
+        @apply text-gothamBlack-50 bg-gothamBlack-700 rounded p-2 text-sm;
+    }
+
+    a {
+        &:hover {
+            @apply text-oceanBlue-600;
+        }
+    }
+
+    // Buttons
+
+    .btn-primary {
+        @apply flex px-4 py-2 font-bold text-sm text-white rounded cursor-pointer bg-oceanBlue-600 w-fit whitespace-nowrap items-center;
+        &:hover {
+            background-color: theme("colors.oceanBlue.700");
+        }
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-outline {
+        @apply flex px-4 py-2 text-sm rounded cursor-pointer bg-transparent border-2 border-gothamBlack-600 w-fit whitespace-nowrap items-center;
+        &:hover {
+            background-color: theme("colors.gothamBlack.800");
+        }
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@layer components {
+    code {
+        @apply text-gothamBlack-50 bg-gothamBlack-700 rounded p-2 text-sm;
+    }
+
+    a {
+        &:hover {
+            @apply text-oceanBlue-600;
+        }
+    }
+
+    // Buttons
+
+    .btn-primary {
+        @apply flex px-4 py-2 font-bold text-sm text-white rounded cursor-pointer bg-oceanBlue-600 w-fit whitespace-nowrap items-center;
+        &:hover {
+            background-color: theme("colors.oceanBlue.700");
+        }
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-outline {
+        @apply flex px-4 py-2 text-sm rounded cursor-pointer bg-transparent border-2 border-gothamBlack-600 w-fit whitespace-nowrap items-center;
+        &:hover {
+            background-color: theme("colors.gothamBlack.800");
+        }
+        transition: all 0.2s ease-in-out;
+    }
+}

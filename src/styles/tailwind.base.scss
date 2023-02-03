@@ -1,0 +1,29 @@
+@tailwind base;
+
+@layer base {
+    html {
+        @apply text-base bg-gothamBlack-900 font-satoshi text-gothamBlack-300;
+    }
+
+    h1 {
+        @apply text-6xl font-bold text-textWhite-300;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        @apply text-3xl text-gothamBlack-50 font-satoshi font-bold;
+    }
+
+    h3 {
+        @apply text-2xl text-gothamBlack-50 font-satoshi font-bold mb-4;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        line-height: 160%;
+    }
+
+    .row {
+        @apply my-4;
+    }
+}
