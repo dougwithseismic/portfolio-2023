@@ -1,10 +1,11 @@
 import { ArticleCard } from '@components/BlogCard'
 import Layout from '@components/Layout'
-import MasonCard from '@components/MasonCard'
+import { motion } from 'framer-motion'
 import TestimonialCard from '@components/TestimonialCard'
 import Image from 'next/image'
+import PortfolioCard from '@components/PortfolioCard'
 
-const RightArrow = ({ ...props }) => (
+export const RightArrow = ({ ...props }) => (
   <svg
     width='17'
     height='16'
@@ -31,7 +32,7 @@ const RightArrow = ({ ...props }) => (
 const Home = () => {
   return (
     <Layout>
-      <section className='text-white bg-black bg-no-repeat bg-cover'>
+      <section className='text-white bg-black bg-no-repeat'>
         <div className='container md:px-16 pt-[96px] py-8 md:py-48  flex flex-col items-center md:max-w-[960px]'>
           <div className='flex my-6 items-center font-bold border-white justify-between px-4 border-2 rounded-full pill h-[36px] '>
             New year, new site! <RightArrow stroke={'white'} />
@@ -61,19 +62,20 @@ const Home = () => {
             <h2 className='my-24 text-5xl font-bold leading-tight tracking-tight text-center md:max-w-2xl'>
               We build brands and products that matter.
             </h2>
-            <div className='flex flex-col items-center my-4 md:max-w-6xl'>
-              <div className='overflow-hidden rounded-xl max-h-[600px] flex items-center shadow-[0px_48px_64px_24px_#0000001A]'>
-                <Image
-                  alt='CHANGE_ME'
-                  width={1200}
-                  height={600}
-                  src='/images/better-beer.webp'
-                  className=' image'
-                />
-              </div>
-              <div className='flex items-center w-full gap-2 my-2 font-bold tracking-tight text-medium label'>
-                BetterBeer 2022 MicroSite <RightArrow stroke={'black'} />
-              </div>
+            <div className='grid gap-4 md:grid-cols-2 flex-nowrap whitespace-nowrap'>
+              <PortfolioCard
+                title='Better Beer Microsite'
+                href='#'
+                imgSrc='/images/better-beer.webp'
+                alt='Example'
+              />
+              <PortfolioCard
+                title='GetBenson.com - Discount Extension Blocker'
+                href='#'
+                imgSrc='/images/bg-desktop.webp'
+                alt='Example'
+              />
+
             </div>
           </div>
         </div>
